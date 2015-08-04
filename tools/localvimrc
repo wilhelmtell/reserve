@@ -1,0 +1,4 @@
+let g:ctrlp_custom_ignore = {
+      \ 'file': '\v\.(o|a|sw[op])$|<(CMakeCache\.txt|cmake_install.cmake|Makefile|config\.h|reserve|libreserve\.a|check_reserve|\.ninja_(deps|log)|(build|rules)\.ninja)$',
+      \ 'dir': '\v<(CMakeFiles|(check_)?reserve\.dSYM)$',
+      \ }

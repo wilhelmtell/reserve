@@ -1,0 +1,15 @@
+.*.sw[op]
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+reserve
+libreserve.a
+check_reserve
+config.h
+Makefile
+.ninja_deps
+.ninja_log
+build.ninja
+reserve_challenge.dSYM/
+rules.ninja
+reserve.dSYM/
