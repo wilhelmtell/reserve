@@ -19,3 +19,9 @@ TEST_CASE("reserve{500} vector has capacity >= 500") {
   auto const a = std::vector<int>(rsv::reserve{500}).capacity();
   REQUIRE(x <= a);
 }
+
+TEST_CASE("construct a reserved vector without auto") {
+  auto const x = 500;
+  std::vector<int> const v(rsv::reserve{500});
+  REQUIRE(x <= v.capacity());
+}
