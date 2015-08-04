@@ -1,8 +1,13 @@
 cmake_minimum_required(VERSION 3.2.2)
 project(reserve VERSION 0.0.0.1)
 
-add_library(reserve_lib src/dummy.hh src/dummy.cc)
-add_executable(check_reserve test/main.cc test/dummy.cc)
+add_library(reserve_lib
+            src/dummy.hh src/dummy.cc
+            src/reserve.hh)
+add_executable(check_reserve
+               test/main.cc
+               test/dummy.cc
+               test/reserve.cc)
 add_executable(reserve_bin src/main.cc)
 add_custom_target(check
                   COMMAND check_reserve
