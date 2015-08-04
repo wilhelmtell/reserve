@@ -3,10 +3,10 @@
 
 #include <vector>
 #include <utility>
+#include <cstddef>
 
 namespace rsv {
-reserve::reserve(std::vector<int>::size_type n)
-: n{std::move(n)} {}
+reserve::reserve(std::size_t n) : n{std::move(n)} {}
 
 template <typename T>
 reserve::operator std::vector<T>() const {

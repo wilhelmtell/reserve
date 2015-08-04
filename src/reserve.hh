@@ -2,16 +2,17 @@
 #define RSV_RESERVE_HH_
 
 #include <vector>
+#include <cstddef>
 
 namespace rsv {
 struct reserve {
-  explicit reserve(std::vector<int>::size_type n);
+  explicit reserve(std::size_t n);
 
   template<typename T>
   operator std::vector<T>() const;
 
 private:
-  std::vector<int>::size_type n;
+  std::size_t n;
 };
 }
 
