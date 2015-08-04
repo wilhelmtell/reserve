@@ -3,7 +3,7 @@ project(reserve VERSION 0.0.0.1)
 
 add_library(reserve_lib
             src/dummy.hh src/dummy.cc
-            src/reserve.hh)
+            src/reserve.hh src/reserve.tcc)
 add_executable(check_reserve
                test/main.cc
                test/dummy.cc
