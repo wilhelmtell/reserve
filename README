@@ -1,0 +1,14 @@
+ reserve - create a vector with reserved capacity
+
+ EXAMPLE
+
+ #include <vector>
+ #include <iostream>
+ #include "reserve.hh"
+
+ int main(int, char*[]) {
+   std::vector<int> const vi(rsv::reserve(100));
+   auto const vc = std::vector<char>(rsv::reserve(140));
+   std::cout << "capacity >= 100: " << vi.capacity() << '\n';
+   std::cout << "capacity >= 140: " << vc.capacity() << '\n';
+ }
