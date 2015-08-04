@@ -1,5 +1,11 @@
  reserve - create a vector with reserved capacity
 
+
+ WHY?
+
+ i'onno.
+
+
  EXAMPLE
 
  #include <vector>
